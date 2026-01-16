@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Website</title>
+
+  <style>
+    body {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center 0px; /* moves background slightly down */
+      background-repeat: no-repeat;
+      text-align: center;
+      font-family: Arial;
+      color: black.;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Heading and paragraph */
+    .top-content {
+      margin-top: 1px; /* push heading down */
+    }
+
+    /* Fade-in animation for welcome message */
+    .top-content h1, .top-content p {
+      opacity: 0; /* start invisible */
+      animation: fadeIn 2s forwards; /* fade in over 2 seconds */
+    }
+
+    .top-content p {
+      animation-delay: 1s; /* paragraph appears 1 second after heading */
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    /* Image and button */
+    .bottom-content {
+      margin-top: 20px; /* small space below heading */
+    }
+
+    img {
+      width: 200px; /* size of your profile image */
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .insta-button {
+      display: inline-block;
+      background-color: #E1306C;
+      color: white;
+      padding: 10px 20px; /* normal button size */
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .insta-button:hover {
+      background-color: #C13584;
+    }
+
+    /* Scroll down arrow */
+    .scroll-down {
+      font-size: 40px;
+      color: white;
+      margin-top: 50px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-15px); }
+      60% { transform: translateY(-7px); }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Heading section -->
+  <div class="top-content">
+    <h1>Hello from Heyy_ashu</h1>
+    <p>WELCOME THIS IS SUMER AHMED. CHECK OUT MY INSTA
+  </div>
+
+  <!-- Image and Instagram button section -->
+  <div class="bottom-content">
+    <img src="insta.jpg" alt="My Profile Picture">
+    <p>
+      <a class="insta-button" href="https://www.instagram.com/_heyyashu_?igsh=bnBma3JxOXJpYnlp" target="_blank">
+        Follow me on Instagram
+      </a>
+    </p>
+  </div>
+
+  <!-- Scroll down arrow -->
+  <div class="scroll-down">heyy_ashu</div>
+
+</body>
+</html>
